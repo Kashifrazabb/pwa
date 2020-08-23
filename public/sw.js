@@ -1,6 +1,9 @@
+const CacheName = 'MyCache'
+const CacheURLS = ['/','/favicon.ico','/services','/about','/index.html','/static/js/main.chunk.js','/static/js/1.chunk.js','/static/js/bundle.js']
+
 this.addEventListener('install',e => 
-    e.waitUntil(caches.open('MyCache')
-    .then(cache=>cache.addAll(['/favicon.ico','/','/services','/about','/index.html','/static/js/main.chunk.js','/static/js/1.chunk.js','/static/js/bundle.js']))
+    e.waitUntil(caches.open(CacheName)
+    .then(cache=>cache.addAll(CacheURLS))
     )
 )
 
