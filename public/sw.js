@@ -1,6 +1,6 @@
 this.addEventListener('install',e => 
     e.waitUntil(caches.open('MyCache')
-    .then(cache=>cache.addAll(['/','/index.html','/static/js/main.chunk.js','/static/js/1.chunk.js','/static/js/bundle.js']))
+    .then(cache=>cache.addAll(['/favicon.ico','/','/services','/about','/index.html','/static/js/main.chunk.js','/static/js/1.chunk.js','/static/js/bundle.js']))
     )
 )
 
